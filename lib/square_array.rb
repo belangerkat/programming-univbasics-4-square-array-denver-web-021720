@@ -1,4 +1,8 @@
-def square_array(array)
-  numbers = []
-  new_numbers = [numbers ** 2]
+
+def square_array(numbers)
+  new_numbers = []
+  numbers.each do |n|
+    new_numbers.push(n ** 2)
+  end
+  return new_numbers
 end
